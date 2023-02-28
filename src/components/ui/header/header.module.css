@@ -1,0 +1,87 @@
+header {
+    background: black;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    padding: 20px 0;
+}
+
+.main>p {
+    width: 10%;
+    font-size: 23px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.main>nav {
+    width: 60%;
+    display: flex;
+
+    align-items: center;
+}
+
+.main nav a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+
+.main nav>a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.main>.search {
+    width: 30%;
+
+}
+
+.searchTerm {
+    /* width: 70%; */
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transition: 1s ease;
+
+}
+
+.search>.general:not(:last-child) {
+    margin-right: 10px;
+}
+
+input {
+    /* width: 100%; */
+    height: 30px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.searchTerm>img {
+    padding: 2px 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    background: transparent;
+    transition: width 2s ease-in-out;
+}
+
+.search .active {
+    width: 100%;
+    border: 1px solid white;
+    transition: 1s ease-in-out;
+    transform: translateX(0);
+}

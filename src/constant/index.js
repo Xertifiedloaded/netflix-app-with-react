@@ -1,0 +1,20 @@
+const APIURL = "https://api.themoviedb.org/3/discover/movie?api_key=04c35731a5ee918f014970082a0088b1";
+const IMGPATH = "https://image.tmdb.org/t/p/w1280";
+const SEARCHAPI =
+    "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
+
+
+
+const API_KEY = "b8147d9a2b320232dcbd7689528ce05a";
+
+const requests = {
+    fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
+    fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
+    fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
+    fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
+    fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
+    fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
+    fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
+    fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
+}
+export default requests;
