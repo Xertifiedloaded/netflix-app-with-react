@@ -1,0 +1,9 @@
+.cards {
+width: 100%;
+min-height: 300px;
+}
+
+.imgContainer>img {
+    /* width: 150px; */
+    width: 100%;
+}

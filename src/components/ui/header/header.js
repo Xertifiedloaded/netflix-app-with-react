@@ -14,21 +14,23 @@ const Header = () => {
                     <p>
                         netflix
                     </p>
-                    <nav>
-                        <Link>Home</Link>
-                        <Link>Tv shows</Link>
-                        <Link>movies</Link>
-                        <Link>new & popular</Link>
-                        <Link>my list</Link>
-                        <Link>browse by language</Link>
-                    </nav>
-                    <div className={classes.search}>
-                        <div className={`${open ? classes.searchTerm && classes.general : classes.active } `} onClick={()=>setOpen(!open)}>
-                            <img src={searchBtn} alt="" srcset="" onClick={()=>setOpen(open)}/>
-                            {/* <input type="text" placeholder='titles, peoples, genres' /> */}
+                    <div className={classes.navBox}>
+                        <nav>
+                            <Link>Home</Link>
+                            <Link>Tv shows</Link>
+                            <Link>Movies</Link>
+                            <Link>New & popular</Link>
+                            <Link>My list</Link>
+                            <Link>Browse by language</Link>
+                        </nav>
+                        <div className={classes.search}>
+                            <div className={`${open ? classes.searchTerm && classes.general : classes.active} `} onClick={() => setOpen(!open)}>
+                                <img src={searchBtn} alt="" srcset="" onClick={() => setOpen(open)} />
+                                <input type="text" placeholder='titles, peoples, genres' />
+                            </div>
+                            <p className={classes.general}> 🔔 </p>
+                            <img className={classes.general} src={profile} alt="" srcset="" />
                         </div>
-                        <p className={classes.general}> 🔔 </p>
-                        <img className={classes.general} src={profile} alt="" srcset="" />
                     </div>
                 </div>
             </header>

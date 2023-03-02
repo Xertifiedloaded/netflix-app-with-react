@@ -1,0 +1,17 @@
+.main {
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(15rem,4fr));
+    gap: 10px;
+    width: 95%;
+    overflow: scroll;
+    margin: 0 auto;
+
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.card {
+    width: 100%;
+    /* border: 1px solid red; */
+}
